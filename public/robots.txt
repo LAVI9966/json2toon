@@ -1,3 +1,7 @@
+User-agent: *
+Allow: /
+# Replace with your domain
+Sitemap: https://yourdomain.com/sitemap.xml
 User-agent: Googlebot
 Allow: /
 
