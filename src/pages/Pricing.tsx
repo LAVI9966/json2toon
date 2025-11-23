@@ -1,14 +1,21 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
+import Head from "@/components/Head";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const Pricing = () => {
   return (
     <div className="flex min-h-screen flex-col">
+      <Head
+        title="Pricing — JSON2TOON Converter"
+        description="Pricing and plans for JSON2TOON (if applicable)."
+        url="https://www.json2toon.online/pricing"
+        image="https://www.json2toon.online/opengraph.png"
+      />
       <Header />
-      
+
       <main className="container mx-auto flex-1 max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -47,7 +54,7 @@ const Pricing = () => {
               ))}
             </ul>
 
-            <Button 
+            <Button
               className="gradient-primary w-full font-semibold shadow-elegant hover:shadow-glow"
               size="lg"
               onClick={() => window.location.href = '/'}

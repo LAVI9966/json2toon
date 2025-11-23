@@ -1,12 +1,19 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
+import Head from "@/components/Head";
 
 const Privacy = () => {
   return (
     <div className="flex min-h-screen flex-col">
+      <Head
+        title="Privacy — JSON2TOON Converter"
+        description="Privacy policy for JSON2TOON. We process conversions client-side and do not collect personal data."
+        url="https://www.json2toon.online/privacy"
+        image="https://www.json2toon.online/opengraph.png"
+      />
       <Header />
-      
+
       <main className="container mx-auto flex-1 max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -26,7 +33,7 @@ const Privacy = () => {
 
             <h3 className="text-xl font-semibold mb-3">Data Processing</h3>
             <p className="text-muted-foreground mb-6">
-              All conversions happen entirely in your browser using client-side JavaScript. 
+              All conversions happen entirely in your browser using client-side JavaScript.
               We do not send your data to any server, and we do not store any of your data.
             </p>
 
@@ -40,7 +47,7 @@ const Privacy = () => {
 
             <h3 className="text-xl font-semibold mb-3">Analytics</h3>
             <p className="text-muted-foreground mb-6">
-              We may use privacy-friendly analytics to understand general usage patterns, 
+              We may use privacy-friendly analytics to understand general usage patterns,
               but these do not track individual users or their data.
             </p>
 
@@ -51,7 +58,7 @@ const Privacy = () => {
 
             <h3 className="text-xl font-semibold mb-3">Security</h3>
             <p className="text-muted-foreground">
-              Since all processing happens in your browser and we don't store any data, 
+              Since all processing happens in your browser and we don't store any data,
               your information is as secure as your own device.
             </p>
           </div>

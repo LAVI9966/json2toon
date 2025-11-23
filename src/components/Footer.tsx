@@ -111,7 +111,7 @@ export const Footer = () => {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            © 2024 TOON Converter. All rights reserved.
+            © {new Date().getFullYear()} TOON Converter. All rights reserved.
           </p>
         </div>
       </div>

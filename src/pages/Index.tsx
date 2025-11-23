@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import VisitCounter from "@/components/VisitCounter";
+import Head from "@/components/Head";
 import { EditorPanel } from "@/components/EditorPanel";
 import { StatsBar } from "@/components/StatsBar";
 import { ExampleButtons } from "@/components/ExampleButtons";
@@ -64,8 +66,14 @@ const Index = () => {
 
   return (
     <div className="flex min-h-screen flex-col">
+      <Head
+        title="JSON ⇄ TOON Converter — Convert JSON to TOON and back"
+        description="Convert between JSON and TOON format instantly. Save 20-40% tokens for AI applications."
+        url="https://www.json2toon.online/"
+        image="https://www.json2toon.online/opengraph.png"
+      />
       <Header />
-      
+
       <main className="container mx-auto flex-1 max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12">
         {/* Hero Section */}
         <div className="mb-8 animate-fade-in text-center sm:mb-12">
@@ -107,7 +115,7 @@ const Index = () => {
               <span className="sm:hidden">TOON</span>
               <ArrowRight className="h-4 w-4" />
             </Button>
-            
+
             <Button
               onClick={handleToonToJson}
               disabled={!toonOutput.trim()}
@@ -150,8 +158,8 @@ const Index = () => {
                 { title: "Smart Escaping", desc: "Reduces quote usage" },
                 { title: "Token Savings", desc: "20-40% typical reduction" }
               ].map((feature, i) => (
-                <div 
-                  key={i} 
+                <div
+                  key={i}
                   className="group rounded-xl border border-border/50 bg-card p-4 transition-all hover:scale-105 hover:border-primary/50 hover:shadow-lg"
                 >
                   <div className="mb-2 flex items-center gap-2">
@@ -168,6 +176,7 @@ const Index = () => {
         </div>
       </main>
 
+      <VisitCounter />
       <Footer />
     </div>
   );

@@ -3,11 +3,19 @@ import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Target, Users, Zap } from "lucide-react";
 
+import Head from "@/components/Head";
+
 const About = () => {
   return (
     <div className="flex min-h-screen flex-col">
+      <Head
+        title="About — JSON2TOON Converter"
+        description="Learn about the TOON format and the goals behind JSON2TOON converter."
+        url="https://www.json2toon.online/about"
+        image="https://www.json2toon.online/opengraph.png"
+      />
       <Header />
-      
+
       <main className="container mx-auto flex-1 max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -22,8 +30,8 @@ const About = () => {
           <Card className="border-border/50 bg-card p-8 shadow-elegant">
             <h2 className="mb-4 text-2xl font-bold">Our Mission</h2>
             <p className="text-muted-foreground">
-              We built TOON Converter to help developers optimize their data for AI applications. 
-              With the rising costs of API calls to large language models, every token counts. 
+              We built TOON Converter to help developers optimize their data for AI applications.
+              With the rising costs of API calls to large language models, every token counts.
               TOON format provides a practical solution that's both human-readable and token-efficient.
             </p>
           </Card>

@@ -3,6 +3,8 @@ import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Zap, Code2, Shield, Sparkles, Database, ArrowDownUp } from "lucide-react";
 
+import Head from "@/components/Head";
+
 const Features = () => {
   const features = [
     {
@@ -39,8 +41,14 @@ const Features = () => {
 
   return (
     <div className="flex min-h-screen flex-col">
+      <Head
+        title="Features — JSON2TOON Converter"
+        description="Explore features like token optimization, fast conversion, and privacy-first client-side processing."
+        url="https://www.json2toon.online/features"
+        image="https://www.json2toon.online/opengraph.png"
+      />
       <Header />
-      
+
       <main className="container mx-auto flex-1 max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -53,8 +61,8 @@ const Features = () => {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-slide-up">
           {features.map((feature, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="group overflow-hidden border-border/50 bg-card p-6 shadow-elegant transition-all hover:scale-105 hover:shadow-glow"
             >
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-primary">

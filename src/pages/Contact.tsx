@@ -7,6 +7,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
+import Head from "@/components/Head";
+
 const Contact = () => {
   const { toast } = useToast();
 
@@ -20,8 +22,14 @@ const Contact = () => {
 
   return (
     <div className="flex min-h-screen flex-col">
+      <Head
+        title="Contact — JSON2TOON Converter"
+        description="Contact the JSON2TOON team for questions or support."
+        url="https://www.json2toon.online/contact"
+        image="https://www.json2toon.online/opengraph.png"
+      />
       <Header />
-      
+
       <main className="container mx-auto flex-1 max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -46,13 +54,13 @@ const Contact = () => {
               </div>
               <div>
                 <label className="mb-2 block text-sm font-medium">Message</label>
-                <Textarea 
-                  placeholder="Tell us what's on your mind..." 
+                <Textarea
+                  placeholder="Tell us what's on your mind..."
                   rows={6}
                   required
                 />
               </div>
-              <Button 
+              <Button
                 type="submit"
                 className="gradient-primary w-full gap-2 font-semibold shadow-elegant hover:shadow-glow"
                 size="lg"
@@ -72,7 +80,7 @@ const Contact = () => {
               <p className="text-sm text-muted-foreground">
                 Reach out to us directly at
               </p>
-              <a 
+              <a
                 href="mailto:hello@toonconverter.com"
                 className="text-sm font-medium text-primary hover:underline"
               >

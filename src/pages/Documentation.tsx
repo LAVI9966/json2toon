@@ -2,11 +2,19 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 
+import Head from "@/components/Head";
+
 const Documentation = () => {
   return (
     <div className="flex min-h-screen flex-col">
+      <Head
+        title="Documentation — JSON2TOON Converter"
+        description="Complete guide and format specification for TOON — a token-efficient data format."
+        url="https://www.json2toon.online/documentation"
+        image="https://www.json2toon.online/opengraph.png"
+      />
       <Header />
-      
+
       <main className="container mx-auto flex-1 max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -21,8 +29,8 @@ const Documentation = () => {
           <Card className="border-border/50 bg-card p-8 shadow-elegant">
             <h2 className="mb-4 text-2xl font-bold">What is TOON?</h2>
             <p className="mb-4 text-muted-foreground">
-              TOON is a compact, human-readable data format optimized for token efficiency. 
-              It's designed specifically for AI applications where reducing token count can 
+              TOON is a compact, human-readable data format optimized for token efficiency.
+              It's designed specifically for AI applications where reducing token count can
               significantly lower costs and improve performance.
             </p>
           </Card>
@@ -34,7 +42,7 @@ const Documentation = () => {
                 <h3 className="mb-2 font-semibold text-foreground">Uniform Arrays</h3>
                 <p className="mb-2">Arrays with uniform objects use CSV-like headers:</p>
                 <pre className="rounded-lg bg-code-bg p-4 font-mono text-sm">
-{`users[2]{name,age}:
+                  {`users[2]{name,age}:
   Alice,30
   Bob,25`}
                 </pre>
@@ -44,7 +52,7 @@ const Documentation = () => {
                 <h3 className="mb-2 font-semibold text-foreground">Nested Objects</h3>
                 <p className="mb-2">Nested structures use indentation:</p>
                 <pre className="rounded-lg bg-code-bg p-4 font-mono text-sm">
-{`user:
+                  {`user:
   name: Alice
   address:
     city: NYC

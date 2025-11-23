@@ -1,12 +1,19 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
+import Head from "@/components/Head";
 
 const Terms = () => {
   return (
     <div className="flex min-h-screen flex-col">
+      <Head
+        title="Terms — JSON2TOON Converter"
+        description="Terms and conditions for using JSON2TOON."
+        url="https://www.json2toon.online/terms"
+        image="https://www.json2toon.online/opengraph.png"
+      />
       <Header />
-      
+
       <main className="container mx-auto flex-1 max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-12 text-center animate-fade-in">
           <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -26,31 +33,31 @@ const Terms = () => {
 
             <h3 className="text-xl font-semibold mb-3">Use of Service</h3>
             <p className="text-muted-foreground mb-6">
-              TOON Converter is provided as-is for free use. You may use this service 
+              TOON Converter is provided as-is for free use. You may use this service
               for any lawful purpose, including commercial applications.
             </p>
 
             <h3 className="text-xl font-semibold mb-3">No Warranty</h3>
             <p className="text-muted-foreground mb-6">
-              While we strive for accuracy, we provide this tool without any warranty. 
+              While we strive for accuracy, we provide this tool without any warranty.
               We are not liable for any errors in conversion or any consequences of using this service.
             </p>
 
             <h3 className="text-xl font-semibold mb-3">Open Source</h3>
             <p className="text-muted-foreground mb-6">
-              This project is open source. You are free to inspect, modify, and distribute 
+              This project is open source. You are free to inspect, modify, and distribute
               the code according to the project license.
             </p>
 
             <h3 className="text-xl font-semibold mb-3">Fair Use</h3>
             <p className="text-muted-foreground mb-6">
-              Please use this service responsibly and do not attempt to overload or 
+              Please use this service responsibly and do not attempt to overload or
               exploit the service in ways that could harm other users.
             </p>
 
             <h3 className="text-xl font-semibold mb-3">Modifications</h3>
             <p className="text-muted-foreground">
-              We reserve the right to modify these terms at any time. Continued use 
+              We reserve the right to modify these terms at any time. Continued use
               of the service constitutes acceptance of modified terms.
             </p>
           </div>

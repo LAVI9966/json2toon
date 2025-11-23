@@ -42,3 +42,26 @@ Links & contact
 If you want, I can:
 - Deploy this project to Netlify or Vercel and connect the domain (you must provide domain/DNS access).
 - Replace the `public/opengraph.png` with a proper PNG if you provide an image.
+
+Sitemap generation
+- A script is included to (re)generate `public/sitemap.xml` before each build.
+- To generate locally without building:
+
+```bash
+node scripts/generate-sitemap.js
+```
+
+Remaining manual steps (your side)
+- Verify ownership in Google Search Console and submit `/sitemap.xml`.
+- Request indexing for the homepage (URL Inspection → Request Indexing).
+- Replace `public/opengraph.png` with a 1200×630 PNG if you want improved social previews.
+- Acquire a few backlinks and share the site on social to help ranking.
+- Run Lighthouse and address Core Web Vitals if needed.
+
+Tracking (Google Analytics)
+- Google Analytics (GA4) snippet is included directly in `index.html`.
+- The snippet is configured with `send_page_view: false` so SPA navigation doesn't cause duplicate events; pageviews are sent by the client code when routes change.
+- To verify: open GA4 Realtime/DebugView and navigate the site, or check Network tab for requests to `googletagmanager.com/gtag/js`.
+
+Visit counter
+- A simple visitor counter (CountAPI) is included on the homepage and increments on page load. For stronger control or privacy, I can add a serverless counter or switch to Plausible/Umami.
