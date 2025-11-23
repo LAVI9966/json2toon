@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
-# Replace with your domain
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://www.json2toon.online/sitemap.xml
+
 User-agent: Googlebot
 Allow: /
 
