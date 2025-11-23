@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import VisitCounter from "@/components/VisitCounter";
 import Head from "@/components/Head";
 import { EditorPanel } from "@/components/EditorPanel";
 import { StatsBar } from "@/components/StatsBar";
@@ -176,7 +175,6 @@ const Index = () => {
         </div>
       </main>
 
-      <VisitCounter />
       <Footer />
     </div>
   );
